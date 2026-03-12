@@ -1,0 +1,24 @@
+{
+  "id": "sort",
+  "title": "sort",
+  "description": "Skill sort test module.",
+  "version": "0.0.1",
+  "authors": [
+    { "name": "pk123" }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331"
+  },
+  "relationships": {
+    "systems": [
+      { "id": "dnd5e" }
+    ]
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/module.css"],
+
+  "url": "https://github.com/pk991233/sort",
+  "manifest": "https://raw.githubusercontent.com/pk991233/sort/refs/heads/1.0.1/sort/module.json",
+  "download": "https://github.com/pk991233/sort/raw/refs/heads/1.0.1/sort/sort.zip"
+}

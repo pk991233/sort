@@ -1,0 +1,107 @@
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="ath"] { order: 1 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="acr"] { order: 2 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="slt"] { order: 3 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="ste"] { order: 4 !important; }
+
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="arc"] { order: 5 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="his"] { order: 6 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="inv"] { order: 7 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="nat"] { order: 8 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="rel"] { order: 9 !important; }
+
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="ani"] { order: 10 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="ins"] { order: 11 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="med"] { order: 12 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="prc"] { order: 13 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="sur"] { order: 14 !important; }
+
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="dec"] { order: 15 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="itm"] { order: 16 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="prf"] { order: 17 !important; }
+ul[data-tidy-sheet-part="skills-list"] > li[data-tidy-sheet-part="skill-container"][data-key="per"] { order: 18 !important; }
+
+/* =========================
+   Token Action HUD：技能分組顯示
+   ========================= */
+
+/* Token Action HUD 本體放寬 */
+#token-action-hud,
+.token-action-hud,
+[class*="token-action-hud"],
+.tah-style-foundry-vtt-dark,
+.tah-groups-container,
+.tah-groups-container.expand-down {
+  width: fit-content !important;
+  min-width: 760px !important;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+.tah-groups {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+  width: fit-content !important;
+  max-width: none !important;
+}
+
+.tah-groups,
+.tah-list-groups,
+.tah-group,
+.tah-list-group,
+.tah-actions {
+  width: fit-content !important;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+/* 技能項目父容器改成 grid */
+.pk-tah-skill-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, max-content) !important;
+  grid-auto-rows: auto !important;
+  gap: 6px !important;
+  width: fit-content !important;
+  max-width: none !important;
+  align-items: start !important;
+}
+
+/* 每個技能項目 wrapper */
+.pk-tah-skill-item {
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+/* 按鈕本體內容貼合 */
+.pk-tah-skill-item button,
+.pk-tah-skill-item a,
+.pk-tah-skill-item .tah-action-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 2px !important;
+
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  padding: 4px 8px !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+/* 取消內層把數字推遠 */
+.pk-tah-skill-item button > *,
+.pk-tah-skill-item button span,
+.pk-tah-skill-item button div,
+.pk-tah-skill-item a > *,
+.pk-tah-skill-item a span,
+.pk-tah-skill-item a div,
+.pk-tah-skill-item .tah-action-button > *,
+.pk-tah-skill-item .tah-action-button span,
+.pk-tah-skill-item .tah-action-button div {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
